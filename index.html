@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Krzystof Emmanuel P. Autencio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simplex Algorithm</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="noPrint">
+            <h1>Simplex Solver</h1>
+            <div id="btnMenu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </header>
+        <article>
+            <aside class="settings noPrint">
+                <div>
+                    <div>
+                        <label>Input Font Size:</label>
+                        <input id="rngInputFontSize" type="range" min="20" max="50" value="20">
+                    </div>
+                    <div>
+                        <label>Output Font Size:</label>
+                        <input id="rngOutputFontSize" type="range" min="20" max="50" value="20">
+                    </div>
+                    <div>
+                        <label>Output Alignment:</label>
+                        <select id="cboAlignment">
+                            <option>left</option>
+                            <option selected>center</option>
+                            <option>right</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button id="btnExport">Export</button>
+                    </div>
+                </div>
+            </aside>
+            <h2 class="noPrint">Initial Tableau Coefficient Matrix</h2>
+            <textarea id="txtInput" class="noPrint"></textarea>
+            <br class="noPrint">
+            <button id="btnSolve" class="noPrint">Solve</button>
+            <section id="secOutput"></section>
+        </article>
+        <footer class="noPrint">
+            <p>&copy; 2019 Krzystof Autencio</p>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>
